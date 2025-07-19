@@ -1,0 +1,37 @@
+# Ignore data files
+*.csv
+*.xlsx
+*.xls
+*.tsv
+
+# Ignore R data and metadata
+*.rds
+*.rda
+*.RData
+.Rhistory
+.Rproj.user/
+*.Rproj
+
+# Ignore Python files and outputs
+*.ipynb
+__pycache__/
+.ipynb_checkpoints/
+*.pkl
+*.pt
+*.h5
+*.onnx
+*.joblib
+
+# Ignore logs and environment files
+*.log
+*.env
+.venv/
+.env/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Optional: temporary or backup files
+*.bak
+*.tmp
