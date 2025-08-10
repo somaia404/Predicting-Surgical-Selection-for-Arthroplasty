@@ -1,37 +1,67 @@
-# Ignore data files
-*.csv
-*.xlsx
-*.xls
-*.tsv
-
-# Ignore R data and metadata
-*.rds
-*.rda
-*.RData
-.Rhistory
-.Rproj.user/
-*.Rproj
-
-# Ignore Python files and outputs
-*.ipynb
+# Byte-compiled / optimized / DLL files
 __pycache__/
-.ipynb_checkpoints/
-*.pkl
-*.pt
-*.h5
-*.onnx
-*.joblib
+*.py[cod]
+*$py.class
 
-# Ignore logs and environment files
-*.log
-*.env
-.venv/
-.env/
+# C extensions
+*.so
 
-# Ignore system files
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# macOS
 .DS_Store
-Thumbs.db
 
-# Optional: temporary or backup files
-*.bak
-*.tmp
+# Windows
+Thumbs.db
