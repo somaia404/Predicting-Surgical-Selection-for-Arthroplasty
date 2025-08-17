@@ -60,7 +60,7 @@ The analysis revealed that while **data augmentation** significantly improved th
 <img src="reports/images/RoBBERTaFold3.png" alt="Confusion Matrix" width="350"/>
 
 **ROC Curve Example:**  
-<img src="images/roc_curve.png" alt="ROC Curve" width="350"/>
+<img src="reports/images/ROC1.png" alt="ROC Curve" width="350"/>
 
 ---
 
