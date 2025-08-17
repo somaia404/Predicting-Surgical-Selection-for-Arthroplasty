@@ -29,8 +29,7 @@ flowchart LR
     D -->|train + validate per fold| E[Checkpoints / artifacts]
     D --> F[evaluation_and_plotting.py]
     F -->|metrics + plots| G[reports/images & README]
-```
-```
+
 flowchart TD
     subgraph Data
         DL[data_loader.py]
