@@ -54,7 +54,7 @@ The most effective strategy was combining the **RoBERTa model with data augmenta
 The analysis revealed that while **data augmentation** significantly improved the model's ability to identify positive cases (high recall), it did so with a notable trade-off in **precision**. The model frequently produced false positives, which is a key area for future improvement.
 
 **Performance Dashboard Example:**  
-<img src="images/dashboard.png" alt="Dashboard" width="400"/>
+<img src="reports/images/AccuracyAndF1Scor.png" alt="Dashboard" width="400"/>
 
 **Confusion Matrix Example:**  
 <img src="images/confusion_matrix.png" alt="Confusion Matrix" width="350"/>
