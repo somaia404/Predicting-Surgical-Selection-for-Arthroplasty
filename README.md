@@ -1,9 +1,9 @@
 
-# Predicting Surgical Selection for Arthroplasty: A Comparative Analysis of NLP Models
+# 🦾 Predicting Surgical Selection for Arthroplasty: A Comparative Analysis of NLP Models  
 
-This project investigates the use of Natural Language Processing (NLP) models to predict patient surgical selection from pre-operative radiology reports. The core objective is to evaluate the performance of advanced transformer models on this classification task, using a rigorous cross-validation approach to ensure reproducibility and robustness.
+This project investigates the use of Natural Language Processing (NLP) models to predict patient surgical selection from pre-operative radiology reports. The aim is to evaluate the performance of advanced transformer models (e.g., GatorTron, RoBERTa) on this classification task using a rigorous cross-validation approach to ensure reproducibility and robustness.  
 
-The project was built upon a foundational code script generously provided by **Dr. Luke Farrow**, which served as the starting point for this analysis. We also thank the developers of **PyTorch**, **Hugging Face**, **scikit-learn**, and other open-source libraries that made this work possible.
+The project framework originates from **Dr. Luke Farrow’s GatorTron model**, developed within the **SHAIP secure environment** on real clinical data. To enable open experimentation and sharing, this repository adapts that pipeline using **synthetic radiology report data** and includes modifications with additional models such as **RoBERTa variants**. We also thank the developers of **PyTorch**, **Hugging Face**, **scikit-learn**, and other open-source libraries that made this work possible.  
 
 ---
 
