@@ -25,6 +25,33 @@ All datasets were mock/test data and no identifiable information was uploaded.
 8. **Link radiology reports** and restrict to pre-op only
 9. **Export final dataset** with selected variables for modelling
 
+    ### 🔗 Data Linkage Workflow
+```mermaid
+flowchart LR
+    subgraph Raw_Data["Raw Data Sources"]
+        RR[Radiology Reports]
+        SMR[SMR01<br>(Hospital Episodes)]
+        OP[OPERA<br>(Operative Database)]
+        PR[PROMs<br>(Patient-Reported Outcomes)]
+    end
+
+    subgraph Linking["Linking Process"]
+        CHI[Unique Identifier<br>(CHI)]
+        TL[Temporal Logic<br>(Date Matching)]
+    end
+
+    subgraph Output["Processed & Linked Data"]
+        CSV[Unified Linked Dataset<br>(De-identified CSV for AI Modeling)]
+    end
+
+    RR --> CHI
+    SMR --> CHI
+    OP --> CHI
+    PR --> CHI
+    CHI --> TL
+    TL --> CSV
+
+```
 ## Output
 - `linked_clean_dataset.csv`  
   Final pre-processed, linked dataset (not uploaded to GitHub due to SHAIP data rules)
