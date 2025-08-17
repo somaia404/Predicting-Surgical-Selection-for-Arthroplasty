@@ -29,3 +29,24 @@ flowchart LR
     D -->|train + validate per fold| E[Checkpoints / artifacts]
     D --> F[evaluation_and_plotting.py]
     F -->|metrics + plots| G[reports/images & README]
+```
+```
+flowchart TD
+    subgraph Data
+        DL[data_loader.py]
+        PDP[private_data_processing/]
+    end
+
+    subgraph Training
+        MT[model_trainer.py]
+    end
+
+    subgraph Evaluation
+        EP[evaluation_and_plotting.py]
+    end
+
+    CSV[(Synthetic CSV)] --> DL
+    DL --> MT
+    PDP -.-> DL
+    MT --> EP
+    EP --> Reports[Outputs: metrics, plots, README visuals]
