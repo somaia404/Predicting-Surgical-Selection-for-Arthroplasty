@@ -1,3 +1,12 @@
+![Python](https://img.shields.io/badge/python-3.8%7C3.9%7C3.10-blue.svg) 
+![R](https://img.shields.io/badge/R-4.x-blue?logo=r&logoColor=white) 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) 
+![GitHub last commit](https://img.shields.io/github/last-commit/somaia404/Predicting-Surgical-Selection-for-Arthroplasty) 
+![GitHub repo size](https://img.shields.io/github/repo-size/somaia404/Predicting-Surgical-Selection-for-Arthroplasty)
+![Built with ❤️ in SHAIP](https://img.shields.io/badge/Built%20with-%E2%9D%A4%EF%B8%8F%20in%20SHAIP-red)
+![HuggingFace](https://img.shields.io/badge/🤗-Transformers-yellow)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white)
+![Credit](https://img.shields.io/badge/Modified%20from-Dr.%20Farrow's%20GatorTron-blueviolet)
 
 # 🦾 Predicting Surgical Selection for Arthroplasty: A Comparative Analysis of NLP Models  
 
