@@ -86,4 +86,4 @@ Hyperparameter Tuning: Conduct a more extensive search to find the optimal combi
 Error Analysis: Perform a deeper analysis of false positive predictions to understand their root causes and develop strategies to mitigate them.
 
 ## 📜 License
-This project is available under the MIT License. See the LICENSE file for details.
+This project is available under the MIT License. See the [LICENSE](LICENSE) file for details.  
