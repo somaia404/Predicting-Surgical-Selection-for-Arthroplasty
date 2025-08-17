@@ -1,3 +1,10 @@
+<p align="center">
+  <img src="assets/UniversityOfAberdeenLogo.png" alt="University of Aberdeen" width="200"/>
+  <img src="assets/NHSGrampian.PNG" alt="NHS Grampian" width="200"/>
+</p>
+
+# 🦴 Predicting Surgical Selection for Arthroplasty: A Comparative Analysis of NLP Models
+
 ![Collaboration](https://img.shields.io/badge/Collaboration-NHS%20Grampian%20%E2%9D%84%EF%B8%8F%20University%20of%20Aberdeen-darkgreen)  
 ![Supervisor](https://img.shields.io/badge/Supervisor-Dr.%20Luke%20Farrow-blueviolet)  
 ![Python](https://img.shields.io/badge/python-3.8%7C3.9%7C3.10-blue.svg) 
