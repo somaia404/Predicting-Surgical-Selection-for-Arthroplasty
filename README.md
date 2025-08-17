@@ -54,13 +54,13 @@ The most effective strategy was combining the **RoBERTa model with data augmenta
 The analysis revealed that while **data augmentation** significantly improved the model's ability to identify positive cases (high recall), it did so with a notable trade-off in **precision**. The model frequently produced false positives, which is a key area for future improvement.
 
 **Performance Dashboard Example:**  
-![Model Performance Dashboard](images/AccuracyAndF1Scor.png)
+<img src="images/dashboard.png" alt="Dashboard" width="400"/>
 
 **Confusion Matrix Example:**  
-![Confusion Matrix](images/RoBBERTaFold3.png)
+<img src="images/confusion_matrix.png" alt="Confusion Matrix" width="350"/>
 
 **ROC Curve Example:**  
-![ROC Curve](images/roc_curve.png)
+<img src="images/roc_curve.png" alt="ROC Curve" width="350"/>
 
 ---
 
