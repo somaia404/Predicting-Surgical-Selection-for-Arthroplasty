@@ -11,14 +11,22 @@ The project was built upon a foundational code script generously provided by **D
 
 The repository is structured to reflect the project's workflow:
 
-- `src/` : Contains all refactored Python scripts for data generation, modeling, and evaluation.  
-- `notebooks/` : Stores the original Jupyter notebooks used for initial development and exploratory analysis.  
-- `data/` : Placeholder for the dataset. Due to patient privacy, the original SHARP dataset cannot be shared. A **synthetic dataset** that mimics the statistical properties of the original data was created for reproducible analysis.  
-- `models/` : Contains the saved, pre-trained model weights.  
-- `images/` : Store performance dashboards, confusion matrices, and plots for README.  
+- - `src/` : Contains all refactored Python scripts for data loading, modeling, and evaluation.  
+  - Includes a `private_data_processing/` subfolder with R scripts used for initial data linkage (no patient identifiers included).  
+- `notebooks/` : Stores Jupyter notebooks used for initial model development and exploratory analysis.  
+- `data/` : Placeholder for the dataset. The original SHARP dataset cannot be shared. A **synthetic dataset** that mimics its statistical properties is provided for reproducibility.  
+- `models/` : Directory for saved model weights (not committed to GitHub).  
+- `images/` : Contains exported figures such as dashboards, confusion matrices, and ROC curves for the README.  
+
 
 ---
+## 🚀 Quickstart
 
+```bash
+pip install -r requirements.txt
+python train.py --csv data/hip_radiology_reports_finalised_SYNTH.csv --model UFNLP/gatortron-base --folds 3
+```
+---
 ## 2️⃣ Acknowledged Contributions and Modifications
 
 This project builds upon the original work to create a more robust and comprehensive machine learning pipeline. The key modifications include:
@@ -46,13 +54,13 @@ The most effective strategy was combining the **RoBERTa model with data augmenta
 The analysis revealed that while **data augmentation** significantly improved the model's ability to identify positive cases (high recall), it did so with a notable trade-off in **precision**. The model frequently produced false positives, which is a key area for future improvement.
 
 **Performance Dashboard Example:**  
-![Model Performance Dashboard](reports/images/AccuracyAndF1Scor.png)
+![Model Performance Dashboard](images/AccuracyAndF1Scor.png)
 
 **Confusion Matrix Example:**  
-![Confusion Matrix](reports/images/RoBBERTaFold3.png)
+![Confusion Matrix](images/RoBBERTaFold3.png)
 
 **ROC Curve Example:**  
-![ROC Curve](reports/images/ROC2.png)
+![ROC Curve](images/roc_curve.png)
 
 ---
 
@@ -76,3 +84,6 @@ python train_and_evaluate.py
 Advanced Data Augmentation: Explore more sophisticated techniques beyond random insertion to improve model generalization.
 Hyperparameter Tuning: Conduct a more extensive search to find the optimal combination of learning rates, batch sizes, and epochs for the best-performing models.
 Error Analysis: Perform a deeper analysis of false positive predictions to understand their root causes and develop strategies to mitigate them.
+
+## 📜 License
+This project is available under the MIT License. See the LICENSE file for details.
