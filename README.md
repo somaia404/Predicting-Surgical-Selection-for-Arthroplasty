@@ -3,9 +3,7 @@
   <img src="assets/IMG_5931.PNG" alt="NHS Grampian" height="120"/>
 </p>
 
-<p align="center">
-  <em>Research collaboration between the University of Aberdeen and NHS Grampian</em>
-</p>
+<p align="center"><em>Research collaboration between the University of Aberdeen and NHS Grampian</em></p>
 
 
 # 🛠️ Predicting Surgical Selection for Arthroplasty: A Comparative Analysis of NLP Models
