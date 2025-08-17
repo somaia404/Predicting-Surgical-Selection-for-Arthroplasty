@@ -25,21 +25,14 @@ All datasets were mock/test data and no identifiable information was uploaded.
 8. **Link radiology reports** and restrict to pre-op only
 9. **Export final dataset** with selected variables for modelling
 
-   ### Pipeline Overview (linkage_pipeline.R)
-1. Load all datasets …
-2. Standardise CHI identifiers …
-…
-9. Export final dataset …
-
-```mermaid
-
+  ```mermaid
 flowchart LR
-   RR[Radiology Reports] --> CHI
-   SMR[SMR01 Admissions] --> CHI
-   OP[OPERA Operations] --> CHI
-   PR[PROMs Outcomes] --> CHI
-   CHI --> TL[Temporal Logic & Cleaning]
-   TL --> CSV[Final Linked Dataset (De-identified)]
+   RR["Radiology Reports"] --> CHI["CHI (Unique Identifier)"]
+   SMR["SMR01 Admissions"] --> CHI
+   OP["OPERA Operations"] --> CHI
+   PR["PROMs Outcomes"] --> CHI
+   CHI --> TL["Cleaning & Temporal Logic"]
+   TL --> CSV["Final Linked Dataset (De-identified)"]
 
 
 ```
