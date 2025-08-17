@@ -1,11 +1,14 @@
 <p align="center">
   <img src="assets/UniversityOfAberdeenLogo.png" alt="University of Aberdeen" height="120" style="margin-right:50px;"/>
-  <img src="assets/IMG_5931.PNG" alt="NHS Grampian" height="120"/>
+  <img src="assets/NHSGrampian.PNG" alt="NHS Grampian" height="120"/>
 </p>
 
+<p align="center">
+  <em>Research collaboration between the University of Aberdeen and NHS Grampian</em>
+</p>
 
+# 🛠️ Predicting Surgical Selection for Arthroplasty: A Comparative Analysis of NLP Models
 
-# 🦴 Predicting Surgical Selection for Arthroplasty: A Comparative Analysis of NLP Models
 
 ![Collaboration](https://img.shields.io/badge/Collaboration-NHS%20Grampian%20%E2%9D%84%EF%B8%8F%20University%20of%20Aberdeen-darkgreen)  
 ![Supervisor](https://img.shields.io/badge/Supervisor-Dr.%20Luke%20Farrow-blueviolet)  
