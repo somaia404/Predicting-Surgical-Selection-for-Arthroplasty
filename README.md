@@ -12,7 +12,7 @@ The project was built upon a foundational code script generously provided by **D
 The repository is structured to reflect the project's workflow:
 
 - - `src/` : Contains all refactored Python scripts for data loading, modeling, and evaluation.  
-  - Includes a `private_data_processing/` subfolder with R scripts used for initial data linkage (no patient identifiers included).  
+   Includes a `private_data_processing/` subfolder with R scripts used for initial data linkage (no patient identifiers included).  
 - `notebooks/` : Stores Jupyter notebooks used for initial model development and exploratory analysis.  
 - `data/` : Placeholder for the dataset. The original SHARP dataset cannot be shared. A **synthetic dataset** that mimics its statistical properties is provided for reproducibility.  
 - `models/` : Directory for saved model weights (not committed to GitHub).  
