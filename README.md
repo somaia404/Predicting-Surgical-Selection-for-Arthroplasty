@@ -1,6 +1,6 @@
 <p align="center">
   <img src="assets/UniversityOfAberdeenLogo.png" alt="University of Aberdeen" height="120" style="margin-right:50px;"/>
-  <img src="assets/NHSGrampian.PNG" alt="NHS Grampian" height="120"/>
+  <img src="assets/IMG_5931.PNG" alt="NHS Grampian" height="120"/>
 </p>
 
 <p align="center">
