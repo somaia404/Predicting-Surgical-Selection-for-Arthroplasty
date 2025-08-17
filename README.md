@@ -1,10 +1,8 @@
 <p align="center">
-  <img src="assets/UniversityOfAberdeenLogo.png" alt="University of Aberdeen" width="150"/>
- 
-  
-  
-  <img src="assets/NHSGrampian.PNG" alt="NHS Grampian" width="150"/>
+  <img src="assets/UniversityOfAberdeenLogo.png" alt="University of Aberdeen" width="200" style="margin-right:50px;"/>
+  <img src="assets/NHSGrampian.PNG" alt="NHS Grampian" width="200"/>
 </p>
+
 
 # 🦴 Predicting Surgical Selection for Arthroplasty: A Comparative Analysis of NLP Models
 
