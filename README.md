@@ -22,7 +22,7 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/somaia404/Predicting-Surgical-Selection-for-Arthroplasty) 
 ![GitHub repo size](https://img.shields.io/github/repo-size/somaia404/Predicting-Surgical-Selection-for-Arthroplasty)
 
-# 🦾 Predicting Surgical Selection for Arthroplasty: A Comparative Analysis of NLP Models  
+ 
 
 This project investigates the use of Natural Language Processing (NLP) models to predict patient surgical selection from pre-operative radiology reports. The aim is to evaluate the performance of advanced transformer models (e.g., GatorTron, RoBERTa) on this classification task using a rigorous cross-validation approach to ensure reproducibility and robustness.  
 
