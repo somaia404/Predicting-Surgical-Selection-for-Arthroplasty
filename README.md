@@ -50,13 +50,25 @@ python train.py --csv data/hip_radiology_reports_finalised_SYNTH.csv --model UFN
 ---
 ## 2️⃣ Acknowledged Contributions and Modifications
 
+## 2️⃣ Acknowledged Contributions and Modifications
+
 This project builds upon the original work to create a more robust and comprehensive machine learning pipeline. The key modifications include:
 
-- **Synthetic Data Generation**: A Python script was developed to generate a realistic, synthetic dataset of clinical text and patient outcomes, enabling a fully reproducible analysis while protecting patient privacy.  
-- **Enhanced Code Structure**: The code was refactored into distinct, logical sections for data generation, model setup, training, and evaluation.  
-- **Improved Evaluation Workflow**: The script now calculates and reports overall average metrics and their 95% confidence intervals across all cross-validation folds.  
-- **Comprehensive Visualization**: New plotting functions were added to generate an aggregated ROC curve, average confusion matrix, and a calibration plot.  
-- **Increased Robustness**: The script now includes error handling for critical operations like file loading.  
+- **Synthetic Data Generation**:  
+  The original scope of this placement was to develop and evaluate models on **real clinical radiology reports within the SHAIP secure environment**.  
+  Due to delays and access restrictions, a **synthetic dataset** was generated to mimic the statistical structure of the real data. This approach ensures reproducibility while protecting patient confidentiality. The methods, models, and evaluation framework developed here are directly transferable to the real dataset once access is available.
+
+- **Enhanced Code Structure**:  
+  The pipeline was refactored into distinct, logical modules for data generation, preprocessing, model setup, training, and evaluation, improving readability and maintainability.
+
+- **Improved Evaluation Workflow**:  
+  The script now calculates and reports average metrics with 95% confidence intervals across all cross-validation folds, providing a more robust view of model performance.
+
+- **Comprehensive Visualization**:  
+  Additional plotting functions were introduced, including aggregated ROC curves, average confusion matrices, calibration plots, and dashboard-style summaries.
+
+- **Increased Robustness**:  
+  Error handling was added for critical operations such as file loading, ensuring smoother execution and clearer debugging feedback.
 
 ---
 
