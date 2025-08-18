@@ -72,19 +72,53 @@ This project builds upon the original work to create a more robust and comprehen
 
 ---
 
-## 3️⃣ Key Findings and Model Performance
+## 🔑 Key Findings and Model Performance  
 
-The most effective strategy was combining the **RoBERTa model with data augmentation**, as demonstrated by the metrics from a 3-fold cross-validation run.
+The analysis investigated the effectiveness of different model variants and strategies for both the **Surgical Selection** and **MCID Classification** tasks.  
 
-| Model Variant                              | F1 Score | Accuracy | Recall  | Precision |
-|--------------------------------------------|----------|----------|---------|-----------|
-| RoBERTa + Data Augmentation                | 0.6917   | 0.5485   | 0.9779  | 0.5355    |
-| RoBERTa + Data Augmentation + Weight Decay | 0.6886   | 0.5462   | 0.9691  | 0.5351    |
-| GatorTron + Class Weighting                | 0.5249   | 0.4452   | 0.8762  | 0.3771    |
-| GatorTron Baseline                         | 0.5244   | 0.4593   | 0.8564  | 0.3779    |
-| RoBERTa + Class Weighting                  | 0.5199   | 0.4365   | 0.8746  | 0.3703    |
+---
 
-The analysis revealed that while **data augmentation** significantly improved the model's ability to identify positive cases (high recall), it did so with a notable trade-off in **precision**. The model frequently produced false positives, which is a key area for future improvement.
+### 🦴 Surgical Selection (Operated On)  
+
+The most effective strategy was combining the **RoBERTa model with data augmentation**, as demonstrated by metrics from a 3-fold cross-validation run.  
+
+| Model Variant                          | F1 Score | Accuracy | Recall | Precision |
+|----------------------------------------|----------|----------|--------|-----------|
+| **RoBERTa + Data Augmentation**        | **0.6917** | 0.5485   | **0.9779** | 0.5355    |
+| RoBERTa + Data Augmentation + Weight Decay | 0.6886 | 0.5462   | 0.9691 | 0.5351    |
+| GatorTron + Class Weighting            | 0.5249   | 0.4452   | 0.8762 | 0.3771    |
+| GatorTron Baseline                     | 0.5244   | 0.4593   | 0.8564 | 0.3779    |
+| RoBERTa + Class Weighting              | 0.5199   | 0.4365   | 0.8746 | 0.3703    |
+
+📌 **Insight:**  
+Data augmentation significantly boosted the model’s ability to identify positive cases (high recall). However, this came with a trade-off in **precision**, leading to frequent false positives — a key area for future optimization.  
+
+---
+
+### 📊 MCID Classification (Minimal Clinically Important Difference)  
+
+Models were developed using both **GatorTron** and **RoBERTa** to predict MCID, a key patient-reported outcome.  
+Both were trained and evaluated using **stratified cross-validation with class weighting and a weighted random sampler** to address class imbalance.  
+
+| Model Variant                | Mean AUROC | Mean AUPRC | F1 (No MCID) | F1 (Yes MCID) | Accuracy |
+|-------------------------------|------------|------------|--------------|---------------|----------|
+| **GatorTron (5-Fold)**        | **0.552**  | 0.473      | 0.565        | 0.540         | 0.558    |
+| GatorTron Baseline (Single Split) | 0.523   | 0.453      | 0.530        | 0.530         | 0.530    |
+| **RoBERTa (5-Fold)**          | 0.532      | **0.481**  | 0.530        | **0.568**     | 0.549    |
+| RoBERTa Baseline (Single Split) | 0.551   | 0.475      | 0.460        | 0.590         | 0.540    |
+
+📌 **Notes:**  
+- “5-Fold” = mean metrics from 5-fold cross-validation.  
+- “Baseline (Single Split)” = metrics from a single 80/20 train-validation split.  
+- GatorTron (5-Fold) used **class weighting** for imbalance handling.  
+
+---
+
+### 📊 Example Visualizations  
+
+- **Performance Dashboard Example**: Overall Accuracy and F1 score comparison.  
+- **Confusion Matrix Example**: Error type distribution across classes.  
+- **ROC Curve Example**: Discrimination ability across thresholds.  
 
 **Performance Dashboard Example:**  
 <img src="reports/images/AccuracyAndF1Scor.png" alt="Dashboard" width="400"/>
