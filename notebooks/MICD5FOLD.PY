@@ -45,7 +45,7 @@ def plot_roc(y_true, probs, title="ROC Curve"):
     plt.show()
     return auc
 
-# Cell 3: Load MCID dataset (upload first in Colab Files pane)
+# Cell 3: Load MCID dataset 
 csv_file_path = "/content/hip_radiology_reports_with_MCID.csv"
 if not os.path.exists(csv_file_path):
     raise FileNotFoundError("Upload your CSV to Colab and set csv_file_path accordingly.")
