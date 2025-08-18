@@ -48,7 +48,7 @@ pip install -r requirements.txt
 python train.py --csv data/hip_radiology_reports_finalised_SYNTH.csv --model UFNLP/gatortron-base --folds 3
 ```
 ---
-## 2️⃣ Acknowledged Contributions and Modifications
+
 
 ## 2️⃣ Acknowledged Contributions and Modifications
 
