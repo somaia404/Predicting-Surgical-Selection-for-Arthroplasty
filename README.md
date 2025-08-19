@@ -1,3 +1,6 @@
+📦 **Releases**: See [v1.0.0 – Initial Public Release](../../releases/latest) for reproducible code, instructions, and datasets.
+
+
 <p align="center">
   <img src="assets/UniversityOfAberdeenLogo.png" alt="University of Aberdeen" height="120" style="margin-right:50px;"/>
   <img src="assets/IMG_5931.PNG" alt="NHS Grampian" height="120"style="margin-right:50px;"/>
