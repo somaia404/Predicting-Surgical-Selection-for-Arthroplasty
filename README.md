@@ -31,7 +31,7 @@ The project framework originates from **Dr. Luke Farrow’s GatorTron model**, d
 
 ---
 
-## 1️⃣ Project Workflow & Repository Structure
+##  Project Workflow & Repository Structure
 
 The repository is structured to reflect the project's workflow:
 
@@ -53,7 +53,7 @@ python train.py --csv data/hip_radiology_reports_finalised_SYNTH.csv --model UFN
 ---
 
 
-## 2️⃣ Acknowledged Contributions and Modifications
+## Acknowledged Contributions and Modifications
 
 This project builds upon the original work to create a more robust and comprehensive machine learning pipeline. The key modifications include:
 
@@ -134,7 +134,7 @@ Both were trained and evaluated using **stratified cross-validation with class w
 
 ---
 
-## 4️⃣ How to Reproduce the Analysis
+## 📉 How to Reproduce the Analysis
 
 This project is fully reproducible. Please follow these steps in order:
 
@@ -150,7 +150,7 @@ Navigate to the src directory and execute the main training and evaluation scrip
 cd src
 python train_and_evaluate.py
 
-5️⃣ Future Work
+👩🏻‍💻 Future Work
 Advanced Data Augmentation: Explore more sophisticated techniques beyond random insertion to improve model generalization.
 Hyperparameter Tuning: Conduct a more extensive search to find the optimal combination of learning rates, batch sizes, and epochs for the best-performing models.
 Error Analysis: Perform a deeper analysis of false positive predictions to understand their root causes and develop strategies to mitigate them.
